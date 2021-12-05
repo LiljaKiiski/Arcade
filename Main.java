@@ -32,12 +32,20 @@ public class Main implements ActionListener{
                 frame.setLayout(null);
 
                 for (int x = 0; x < games.size(); x++){
-			games.get(x).setMargin(new Insets(0, 0, 0, 0));
-			games.get(x).setBorderPainted(false);
-			games.get(x).setBounds(x*175+25, 25, 150, 150);
+			games.get(x).setBounds(x*175+25, 200, 150, 150);
         	        games.get(x).addActionListener(this);
+                        games.get(x).setFocusPainted(false);
+                        games.get(x).setMargin(new Insets(0, 0, 0, 0));
+                        games.get(x).setContentAreaFilled(false);
+                        games.get(x).setBorderPainted(false);
+                        games.get(x).setOpaque(false);
 			frame.add(games.get(x));
 		}
+
+		JLabel bg = new JLabel(new ImageIcon("images/bg.png"));
+                bg.setLocation(0, 0);
+                bg.setSize(725, 700);
+                frame.add(bg);
 
                 frame.setSize(725, 700);
                 frame.setLocationRelativeTo(null);

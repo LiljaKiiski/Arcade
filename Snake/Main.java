@@ -12,7 +12,6 @@ public class Main extends JPanel implements KeyListener, ActionListener{
 	public Coordinate apple; //Apple coordinate
 	public int numApples = 0; //Number of apples collected
 	public boolean turnedThisRound = false; //Allow turn of snake once per cycle
-	public Lock lock = new ReentrantLock(); //Lock for keyListener and actionPerformed
 
 	public static void main (String[] args) {
 		new Main().setUpGame();
@@ -20,8 +19,6 @@ public class Main extends JPanel implements KeyListener, ActionListener{
 
 	//Runs every 1/5 of a second
 	public void actionPerformed(ActionEvent event){	
-		lock.lock();
-
 		//If snake alive
 		if (checkSnakeAlive()){
 			snake.move();
@@ -44,8 +41,6 @@ public class Main extends JPanel implements KeyListener, ActionListener{
 		}
 		repaint();
                 Toolkit.getDefaultToolkit().sync();
-
-		lock.unlock();
 	}
 
 	@Override
@@ -67,35 +62,17 @@ public class Main extends JPanel implements KeyListener, ActionListener{
 
 		if (!checkSnakeAlive()){
 			g.setFont(new Font("Roboto", Font.PLAIN, 100));
-                	g2d.drawString("Play Snake?", 105, 200);
-				      
-			g.setFont(new Font("Roboto", Font.PLAIN, 40));
-			g2d.drawString("Press any key to play", 176, 280);
+                	g2d.drawString("You Lose!", 150, 200);
 		}					     
 	}	
 
 	//Listens to Keys
         public void keyPressed(KeyEvent event) {
-		lock.lock();
-
-		//Start new game
-		if (!checkSnakeAlive()){
-                        grid = new ImageIcon[15][15];
-                        snake = new Snake(grid.length);
-                        apple = new Coordinate(0, 0);
-                        addApple();
-                        numApples = 0;
-                        drawGrid();
-                        snake.alive = true;
-			snake.setDirection('r');
-                }
-		
 		char dir = KeyEvent.getKeyText(event.getKeyCode()).toLowerCase().charAt(0);
-                if ((dir == 'u' || dir == 'd' || dir == 'l' || dir == 'r') && !turnedThisRound){
+               	if ((dir == 'u' || dir == 'd' || dir == 'l' || dir == 'r') && !turnedThisRound && checkSnakeAlive()){
                         snake.setDirection(dir);
-        	        turnedThisRound = true;
+        		turnedThisRound = true;
 	        } 
-		lock.unlock();
         }
 
         public void keyReleased(KeyEvent event) { }
@@ -163,13 +140,17 @@ public class Main extends JPanel implements KeyListener, ActionListener{
 
 	//Sets up game
 	public void setUpGame(){
-                JFrame f = new JFrame("Snake");
-                f.setLayout(new GridLayout(1,1));
-
-		apple = new Coordinate(0, 0);
-		addApple();
-		drawGrid();
-
+		grid = new ImageIcon[15][15];
+                snake = new Snake(grid.length);
+                apple = new Coordinate(0, 0);
+                addApple();
+                numApples = 0;
+                drawGrid();
+                snake.alive = true;
+                snake.setDirection('r');
+		
+		JFrame f = new JFrame("Snake");
+		f.setLayout(new GridLayout(1, 1));
 		f.add(this);
 		f.setIconImage(new ImageIcon("images/cover.png").getImage());
                 f.addKeyListener(this);
