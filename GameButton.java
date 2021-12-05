@@ -1,14 +1,13 @@
-import java.awt.Image;
+import javax.swing.JButton;
 import javax.swing.ImageIcon;
 import java.io.IOException;
 
-public class Game {
+public class GameButton extends JButton {
 	String command;
-	Image image;
 
-	public Game(String command, String imageName) {
+	public GameButton(String command, String imageName) {
 		this.command = command;
-		image = new ImageIcon(imageName).getImage();
+		setIcon(new ImageIcon(imageName));
 	}
 
 	public void execute(){

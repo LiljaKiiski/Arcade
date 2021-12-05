@@ -4,39 +4,42 @@ import javax.swing.*;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class Main extends JPanel implements ActionListener{
-	public ArrayList <Game> games = new ArrayList<>();
+public class Main implements ActionListener{
+	public ArrayList<GameButton> games = new ArrayList<>();
 
 	public static void main (String[] args){
 		new Main().createGame();
 	}
 
 	public void actionPerformed(ActionEvent e){
-
+		for (int x = 0; x < games.size(); x++){
+			if (e.getSource() == games.get(x)){
+				games.get(x).execute();
+			}
+		}
 	}
 
 	public void createGame(){
-		games.add(new Game("./Bounce/bounce.sh", "images/bounce.png"));
-		games.add(new Game("./SpaceGame/space.sh", "images/space.png"));
-		games.add(new Game("./Snake/snake.sh", "images/snake.png"));
-		games.add(new Game("./FingerDancer/dancer.sh", "images/dancer.png"));
+		games.add(new GameButton("./Bounce/bounce.sh", "images/bounce.png"));
+		games.add(new GameButton("./SpaceGame/space.sh", "images/space.png"));
+		games.add(new GameButton("./Snake/snake.sh", "images/snake.png"));
+		games.add(new GameButton("./FingerDancer/dancer.sh", "images/dancer.png"));
 		setUpWindow();
 	}
 
-	@Override
-	public void paintComponent(Graphics g){
-		super.paintComponent(g);
-                Graphics2D g2d = (Graphics2D)g;
-
-                //g2d.drawImage(level.bg.image, level.bg.posX, 0, null);
-	}
-
 	public void setUpWindow(){
-		JFrame frame = new JFrame("Lilja's Mini Games");
-		frame.setLayout(new GridLayout(1, 1));
+                JFrame frame = new JFrame("Lilja's Mini Games");
+                frame.setLayout(null);
 
-		frame.add(this);
-                frame.setSize(700, 700);
+                for (int x = 0; x < games.size(); x++){
+			games.get(x).setMargin(new Insets(0, 0, 0, 0));
+			games.get(x).setBorderPainted(false);
+			games.get(x).setBounds(x*175+25, 25, 150, 150);
+        	        games.get(x).addActionListener(this);
+			frame.add(games.get(x));
+		}
+
+                frame.setSize(725, 700);
                 frame.setLocationRelativeTo(null);
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 frame.setResizable(false);

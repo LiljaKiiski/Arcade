@@ -1,3 +1,3 @@
 #!/bin/sh
 
-javac Main.java Game.java
+javac Main.java GameButton.java
