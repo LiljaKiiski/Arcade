@@ -28,6 +28,7 @@ public class Main implements ActionListener{
 		games.add(new GameButton("./SpaceGame/space.sh", "images/space.png"));
 		games.add(new GameButton("./Snake/snake.sh", "images/snake.png"));
 		games.add(new GameButton("./FingerDancer/dancer.sh", "images/dancer.png"));
+		games.add(new GameButton("./ElementFinder/finder.sh", "images/finder.png"));
 		setUpWindow();
 	}
 
@@ -36,7 +37,11 @@ public class Main implements ActionListener{
                 frame.setLayout(null);
 
                 for (int x = 0; x < games.size(); x++){
-			games.get(x).setBounds(x*175+25, 200, 150, 150);
+			int posY = (int) 200 + x/4*200;
+			int posX = (int) x%4*175 + 25;
+
+			System.out.println(posX);
+			games.get(x).setBounds(posX, posY, 150, 150);
         	        games.get(x).addActionListener(this);
                         games.get(x).setFocusPainted(false);
                         games.get(x).setMargin(new Insets(0, 0, 0, 0));
@@ -53,7 +58,6 @@ public class Main implements ActionListener{
 		frame.add(numGames);
 
                 frame.setSize(725, 700);
-		frame.setIconImage(new ImageIcon("images/logo_banner.png").getImage());
                 frame.setLocationRelativeTo(null);
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 frame.setResizable(false);
