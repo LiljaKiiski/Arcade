@@ -6,6 +6,8 @@ import java.util.ArrayList;
 
 public class Main implements ActionListener{
 	public ArrayList<GameButton> games = new ArrayList<>();
+	public JLabel numGames;
+	public int number = 0;
 
 	public static void main (String[] args){
 		new Main().createGame();
@@ -15,6 +17,8 @@ public class Main implements ActionListener{
 		for (int x = 0; x < games.size(); x++){
 			if (e.getSource() == games.get(x)){
 				games.get(x).execute();
+				number++;
+				numGames.setText("Games Played: " + number);
 			}
 		}
 	}
@@ -42,12 +46,14 @@ public class Main implements ActionListener{
 			frame.add(games.get(x));
 		}
 
-		JLabel bg = new JLabel(new ImageIcon("images/bg.png"));
-                bg.setLocation(0, 0);
-                bg.setSize(725, 700);
-                frame.add(bg);
+		numGames = new JLabel("Games Played: " + number);
+		numGames.setLocation(20, 0);
+                numGames.setSize(200, 50);
+		numGames.setFont(new Font("Roboto", Font.PLAIN, 24));
+		frame.add(numGames);
 
                 frame.setSize(725, 700);
+		frame.setIconImage(new ImageIcon("images/logo_banner.png").getImage());
                 frame.setLocationRelativeTo(null);
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 frame.setResizable(false);
