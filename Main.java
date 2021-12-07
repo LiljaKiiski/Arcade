@@ -40,7 +40,6 @@ public class Main implements ActionListener{
 			int posY = (int) 200 + x/4*200;
 			int posX = (int) x%4*175 + 25;
 
-			System.out.println(posX);
 			games.get(x).setBounds(posX, posY, 150, 150);
         	        games.get(x).addActionListener(this);
                         games.get(x).setFocusPainted(false);
