@@ -38,7 +38,7 @@ public class Main implements ActionListener{
                 frame.setLayout(null);
 
                 for (int x = 0; x < games.size(); x++){
-			int posY = (int) 100 + x/4*175;
+			int posY = (int) 75 + x/4*175;
 			int posX = (int) x%4*175 + 25;
 
 			games.get(x).setBounds(posX, posY, 150, 150);
