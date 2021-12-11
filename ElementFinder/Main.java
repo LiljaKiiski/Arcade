@@ -540,6 +540,7 @@ public class Main extends JPanel implements ActionListener,  KeyListener {
 		timer.start();	
 
 		f.add(cards, BorderLayout.CENTER);
+		f.setIconImage(new ImageIcon("src/images/characterR1.png").getImage());
 		f.setSize(WIDTH, HEIGHT);
 		f.setLocationRelativeTo(null);
 		f.setResizable(false);

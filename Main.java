@@ -29,6 +29,7 @@ public class Main implements ActionListener{
 		games.add(new GameButton("./Snake/snake.sh", "images/snake.png"));
 		games.add(new GameButton("./FingerDancer/dancer.sh", "images/dancer.png"));
 		games.add(new GameButton("./ElementFinder/finder.sh", "images/finder.png"));
+		games.add(new GameButton("./Gomoku/gomoku.sh", "images/gomoku.png"));
 		setUpWindow();
 	}
 
@@ -37,7 +38,7 @@ public class Main implements ActionListener{
                 frame.setLayout(null);
 
                 for (int x = 0; x < games.size(); x++){
-			int posY = (int) 200 + x/4*200;
+			int posY = (int) 100 + x/4*175;
 			int posX = (int) x%4*175 + 25;
 
 			games.get(x).setBounds(posX, posY, 150, 150);
@@ -52,7 +53,7 @@ public class Main implements ActionListener{
 
 		numGames = new JLabel("Games Played: " + number);
 		numGames.setLocation(20, 0);
-                numGames.setSize(200, 50);
+                numGames.setSize(500, 50);
 		numGames.setFont(new Font("Roboto", Font.PLAIN, 24));
 		frame.add(numGames);
 

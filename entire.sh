@@ -2,6 +2,11 @@
 
 javac Main.java GameButton.java
 
+cd Gomoku
+javac Main.java Client.java ClientHandler.java Server.java Game.java
+
+cd ..
+
 cd FingerDancer
 javac Main.java Arrow.java  Hand.java SoundPlayer.java
 
