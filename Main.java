@@ -30,12 +30,11 @@ public class Main implements ActionListener{
 		games.add(new GameButton("./FingerDancer/dancer.sh", "images/dancer.png"));
 		games.add(new GameButton("./ElementFinder/finder.sh", "images/finder.png"));
 		games.add(new GameButton("./Gomoku/gomoku.sh", "images/gomoku.png"));
-		games.add(new GameButton("./Gomoku/gomoku_server.sh", "images/gomoku_server.png"));
 		setUpWindow();
 	}
 
 	public void setUpWindow(){
-                JFrame frame = new JFrame("Lilja's Mini Games");
+                JFrame frame = new JFrame("Lilja's Arcade");
                 frame.setLayout(null);
 
                 for (int x = 0; x < games.size(); x++){

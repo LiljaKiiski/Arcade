@@ -1,5 +1,7 @@
 #!/bin/sh
 
+mv *.class ~/temp
+
 cd Bounce
 mv __pycache__ ~/temp
 cd ..
