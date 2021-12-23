@@ -1,14 +1,14 @@
 # Element Finder
-![alt text](https://github.com/LiljaKiiski/ElementFinder/blob/main/cover_picture.png)
+April - May 2021
 
-An educational game to learn about the first 25 elements of the periodic table.
+![alt text](https://github.com/LiljaKiiski/Arcade/blob/master/images/finder.png)
 
-# Set Up
-1. Download project zip file
-2. Unzip project
-3. Compile files using compile.sh or by manually compiling using javac
-4. Play game by typing "java Main"
-5. Have fun!
+Jump around collecting the first 25 elements of the periodic table!
+The official GitHub for this game can be found [here](https://github.com/LiljaKiiski/ElementFinder)
 
-# Game 
-Game instuctions are very simple! Just click the "Directions" button on the home page of the game to learn how to play, and have fun!
+# Play
+1. Make sure you have followed the Set Up instructions found [here](https://github.com/LiljaKiiski/Arcade/blob/master/README.md)
+2. Go to the ElementFinder directory
+3. Compile all Java files
+4. Run "java Main" in command line, or run Main.java in IDE
+5. Play the game
