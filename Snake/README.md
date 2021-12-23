@@ -1,13 +1,13 @@
 # Snake
-The very basic Snake Game
+November 2021
 
-![alt text](https://github.com/LiljaKiiski/Snake/blob/master/images/cover.png)
+![alt text](https://github.com/LiljaKiiski/Arcade/blob/master/images/snake.png)
 
-# Set Up:
-1. Download files
-2. Run compile.sh, or compile all java files manually
+Move around eating apples, growing in size with each one you eat! 
 
-# Play:
-1. Run run.sh
-2. Press any key to start
-3. Have fun!
+# Play
+1. Make sure you have followed the Set Up instructions found [here](https://github.com/LiljaKiiski/Arcade/blob/master/README.md)
+2. Go to the Snake directory
+3. Compile all Java files
+4. Run "java Main" in command line
+5. Play!
