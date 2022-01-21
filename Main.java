@@ -18,7 +18,7 @@ public class Main implements ActionListener{
 			if (e.getSource() == games.get(x)){
 				games.get(x).execute();
 				number++;
-				numGames.setText("Games Played: " + number);
+				numGames.setText(number + "");
 			}
 		}
 	}
@@ -38,8 +38,8 @@ public class Main implements ActionListener{
                 frame.setLayout(null);
 
                 for (int x = 0; x < games.size(); x++){
-			int posY = (int) 75 + x/4*175;
-			int posX = (int) x%4*175 + 25;
+			int posY = (int) 185 + x/4*125;
+			int posX = (int) x%4*125;
 
 			games.get(x).setBounds(posX, posY, 150, 150);
         	        games.get(x).addActionListener(this);
@@ -51,13 +51,18 @@ public class Main implements ActionListener{
 			frame.add(games.get(x));
 		}
 
-		numGames = new JLabel("Games Played: " + number);
+		numGames = new JLabel(number + "");
+		numGames.setForeground(Color.WHITE);
 		numGames.setLocation(20, 0);
                 numGames.setSize(500, 50);
-		numGames.setFont(new Font("Roboto", Font.PLAIN, 24));
+		numGames.setFont(new Font("Press Start 2P", Font.PLAIN, 24));
 		frame.add(numGames);
 
-                frame.setSize(725, 700);
+		JLabel bg = new JLabel(new ImageIcon("images/bg.png"));
+                bg.setBounds(0, 0, 525, 600);
+                frame.add(bg);
+
+                frame.setSize(525, 625);
                 frame.setLocationRelativeTo(null);
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 frame.setResizable(false);

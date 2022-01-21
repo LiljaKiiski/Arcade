@@ -1,8 +1,8 @@
 [Desktop Entry]
 Type=Application
 Name=Arcade
-Icon=/home/lilja/games/Arcade/images/Main.java
-Exec=/home/lilja/bashes/arcade.sh
+Icon=/home/lilja/Arcade/images/cover.png
+Exec=/home/lilja/Arcade/arcade.sh
 Terminal=false
 Categories=Emulator
 Keywords=Arcade
