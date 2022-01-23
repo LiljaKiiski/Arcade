@@ -63,7 +63,8 @@ public class Main implements ActionListener{
                 frame.add(bg);
 
                 frame.setSize(525, 625);
-                frame.setLocationRelativeTo(null);
+                frame.setIconImage(new ImageIcon("images/cover.png").getImage());
+		frame.setLocationRelativeTo(null);
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 frame.setResizable(false);
                 frame.setVisible(true);
