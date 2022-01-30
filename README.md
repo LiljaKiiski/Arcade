@@ -2,8 +2,8 @@
 Play all the games Lilja has made since she started coding... except the ones she didn't finish.
 
 ***NOTE!***
-The main program that counts the number of games you play and runs games with a button click works by running shell script, 
-so this will not work with Windows (and maybe not with MacOS). Basically I've only tested this with linux (Ubuntu). However you can still run each of the games on their own by running them with Java or Python3 in their corresponding directory
+The main program(shown below) that runs games with a button click works by running shell scripts, 
+so this will not work with Windows (and maybe not with MacOS), I've only tested this with Linux (Ubuntu). However you can still run each of the games on their own by running them with Java or Python3 in their corresponding directory
 
 ![alt text](https://github.com/LiljaKiiski/Arcade/blob/master/images/cover.png)
 
