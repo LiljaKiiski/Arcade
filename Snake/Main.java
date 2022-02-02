@@ -3,8 +3,6 @@ import javax.swing.*;
 import java.awt.event.*;
 import java.util.Scanner;
 import java.util.ArrayList;
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
 
 public class Main extends JPanel implements KeyListener, ActionListener{
 	public ImageIcon[][] grid = new ImageIcon[15][15]; //Grid with image icons
