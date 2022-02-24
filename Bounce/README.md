@@ -1,7 +1,7 @@
 # Bounce
 November 2020
 
-![alt text](https://github.com/LiljaKiiski/Arcade/blob/master/images/bounce.png)
+![alt text](https://github.com/LiljaKiiski/arcade-games/blob/master/images/bounce.png)
 
 Don't let the ball hit the ground! Use the handy paddle to stop it from bouncing to it's doom. 
 
