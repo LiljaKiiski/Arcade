@@ -1,7 +1,7 @@
 # Finger Dancer
 December 2021
 
-![alt text](https://github.com/LiljaKiiski/Arcade/blob/master/images/dancer.png)
+![alt text](https://github.com/LiljaKiiski/arcade-games/blob/master/images/dancer.png)
 
 Dance around by pressing keys! Press the corresponding keys as they fly up and hit the landing circle.
 Idea taken from DDR.
