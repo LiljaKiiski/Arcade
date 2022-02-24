@@ -1,7 +1,7 @@
 # Gomoku
 October 2021
 
-![alt text](https://github.com/LiljaKiiski/Arcade/blob/master/images/gomoku.png)
+![alt text](https://github.com/LiljaKiiski/arcade-games/blob/master/images/gomoku.png)
 
 A two player game, kind of like tic tac toe, except you need to get five in a row.
 
