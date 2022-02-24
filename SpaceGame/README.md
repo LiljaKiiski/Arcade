@@ -1,7 +1,7 @@
 # Space Game
 December 2020
 
-![alt text](https://github.com/LiljaKiiski/Arcade/blob/master/images/space.png)
+![alt text](https://github.com/LiljaKiiski/arcade-games/blob/master/images/space.png)
 
 Move around through space as a spaceship, dodging lasers as they try to hit you!
 
