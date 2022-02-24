@@ -1,7 +1,7 @@
 # Element Finder
 April - May 2021
 
-![alt text](https://github.com/LiljaKiiski/Arcade/blob/master/images/finder.png)
+![alt text](https://github.com/LiljaKiiski/arcade-games/blob/master/images/finder.png)
 
 Jump around collecting the first 25 elements of the periodic table! 
 For directions, refer to the directions button when running the program
