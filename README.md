@@ -5,7 +5,7 @@ Play all the games Lilja has made since she started coding... except the ones sh
 The main program(shown below) that runs games with a button click works by running shell scripts, 
 so this will not work with Windows (and maybe not with MacOS), I've only tested this with Linux (Ubuntu). However you can still run each of the games on their own by running them with Java or Python3 in their corresponding directory
 
-![alt text](https://github.com/LiljaKiiski/Arcade/blob/master/images/cover.png)
+![alt text](https://github.com/LiljaKiiski/arcade-games/blob/master/images/cover.png)
 
 # Set Up
 1. To play all games... make sure you have installed:
