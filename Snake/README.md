@@ -1,7 +1,7 @@
 # Snake
 November 2021
 
-![alt text](https://github.com/LiljaKiiski/Arcade/blob/master/images/snake.png)
+![alt text](https://github.com/LiljaKiiski/arcade-games/blob/master/images/snake.png)
 
 Move around eating apples, growing in size with each one you eat! 
 
