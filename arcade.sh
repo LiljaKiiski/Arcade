@@ -1,4 +1,4 @@
 #!/bin/sh
 
-cd ~/Arcade/
+cd ~/arcade-games/
 java Main
