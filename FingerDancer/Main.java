@@ -7,7 +7,7 @@ public class Main extends JPanel implements ActionListener, KeyListener{
 	ArrayList<Arrow> arrows = new ArrayList<>();
 	Arrow exArrow = new Arrow("GreyArrows", 0, 0);
 	Hand hand = new Hand(450, 200);
-        SoundPlayer player = new SoundPlayer("tetris.wav");
+        SoundPlayer player = new SoundPlayer("music.wav");
         JFrame frame;
 
 	Timer addArrow = new Timer(450, this);
