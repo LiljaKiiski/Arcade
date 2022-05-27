@@ -24,19 +24,19 @@ public class Main implements ActionListener{
 	}
 
 	public void createGame(){
-		games.add(new GameButton("./bounce/bounce.sh", "images/bounce.png"));
-		games.add(new GameButton("./space-game/space.sh", "images/space.png"));
-		games.add(new GameButton("./pogo-fish/pogofish.sh", "images/pogofish.png"));
-		games.add(new GameButton("./kivy-pong/kivypong.sh", "images/kivypong.png"));
-		games.add(new GameButton("./snake/snake.sh", "images/snake.png"));
-		games.add(new GameButton("./finger-dancer/dancer.sh", "images/dancer.png"));
-		games.add(new GameButton("./element-finder/finder.sh", "images/finder.png"));
-		games.add(new GameButton("./gomoku/gomoku.sh", "images/gomoku.png"));
+		games.add(new GameButton("./bounce/bounce.sh", "images/bounce.png")); //November 2020
+		games.add(new GameButton("./space-game/space.sh", "images/space.png")); //December 2020
+		games.add(new GameButton("./pogo-fish/pogofish.sh", "images/pogofish.png")); //January-March 2021
+		games.add(new GameButton("./kivy-pong/kivypong.sh", "images/kivypong.png")); //April 2021
+		games.add(new GameButton("./element-finder/finder.sh", "images/finder.png")); //April-May 2021
+		games.add(new GameButton("./gomoku/gomoku.sh", "images/gomoku.png")); //October 2021
+		games.add(new GameButton("./snake/snake.sh", "images/snake.png")); //November 2021
+		games.add(new GameButton("./finger-dancer/dancer.sh", "images/dancer.png")); //December 2021
 		setUpWindow();
 	}
 
 	public void setUpWindow(){
-                JFrame frame = new JFrame("Lilja's Arcade");
+                JFrame frame = new JFrame("Lilja Arcade");
                 frame.setLayout(null);
 
                 for (int x = 0; x < games.size(); x++){
