@@ -1,5 +1,5 @@
 # [READMES UNDER CONSTRUCTION]
-# Lilja's Arcade
+# Lilja Arcade
 Old games Lilja has made from December 2020 - November 2021
 
 ***NOTE!***
