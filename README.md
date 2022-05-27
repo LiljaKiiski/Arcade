@@ -1,5 +1,5 @@
 # Lilja's Arcade
-Play all the games Lilja has made since she started coding... except the ones she didn't finish.
+Lilja's old games
 
 ***NOTE!***
 The main program(shown below) that runs games with a button click works by running shell scripts, 
@@ -9,11 +9,15 @@ so this will not work with Windows (and maybe not with MacOS), I've only tested 
 
 # Set Up
 1. To play all games... make sure you have installed:
-- Java (JDK + JRE)
+- Java JDK + JRE)
 - Python3
 - Tkinter (for python3)
+- Pygame (for python3)
+- Kivy (for python3)
+
 2. Clone this repository or download the project files
-3. Compile Java files either by:
+
+4. Compile Java files either by:
 - Using the premade compile.sh executable OR
 - Manually compiling all Java files found in Snake, Finger Dancer, Element Finder, and Gomoku
 
