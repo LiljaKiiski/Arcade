@@ -1,15 +1,16 @@
-# Lilja's Arcade
-Lilja's old games
+# [READMES UNDER CONSTRUCTION]
+# Lilja Arcade
+Old games Lilja has made from December 2020 - November 2021
 
 ***NOTE!***
 The main program(shown below) that runs games with a button click works by running shell scripts, 
-so this will not work with Windows (and maybe not with MacOS), I've only tested this with Linux (Ubuntu). However you can still run each of the games on their own by running them with Java or Python3 in their corresponding directory
+so this will not work with Windows (and maybe not with MacOS), I've only tested this with Ubuntu. However you can still run each of the games on their own by running them with Java or Python3 in their corresponding directory
 
 ![alt text](https://github.com/LiljaKiiski/arcade-games/blob/master/images/cover.png)
 
 # Set Up
 1. To play all games... make sure you have installed:
-- Java JDK + JRE)
+- Java JDK + JRE
 - Python3
 - Tkinter (for python3)
 - Pygame (for python3)
@@ -27,3 +28,9 @@ so this will not work with Windows (and maybe not with MacOS), I've only tested 
 3. Keep track of how many games you play with the "Games Played" label at the top
 
 ***For instructions on how to play certain games, refer to the README.md in the game's directory. Have fun!***
+
+TO-DO:
+- Add game icons in front game screen in order of creation
+- Make kivy-pong readme
+- Make pogofish readme
+- final touches
