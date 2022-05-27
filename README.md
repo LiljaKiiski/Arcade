@@ -1,9 +1,9 @@
 # Lilja's Arcade
-Lilja's old games
+Old games Lilja has made from December 2020 - November 2021
 
 ***NOTE!***
 The main program(shown below) that runs games with a button click works by running shell scripts, 
-so this will not work with Windows (and maybe not with MacOS), I've only tested this with Linux (Ubuntu). However you can still run each of the games on their own by running them with Java or Python3 in their corresponding directory
+so this will not work with Windows (and maybe not with MacOS), I've only tested this with Ubuntu. However you can still run each of the games on their own by running them with Java or Python3 in their corresponding directory
 
 ![alt text](https://github.com/LiljaKiiski/arcade-games/blob/master/images/cover.png)
 
