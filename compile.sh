@@ -1,21 +1,17 @@
 #!/bin/sh
 
-javac Main.java GameButton.java
+echo "starting compilation"; javac *.java
 
-cd Gomoku
-javac Main.java Client.java ClientHandler.java Server.java Game.java
+cd gomoku
+echo "compiling gomoku"; javac *.java
 
-cd ..
+cd ../finger-dancer
+echo "compiling finger-dancer"; javac *.java
 
-cd FingerDancer
-javac Main.java Arrow.java  Hand.java SoundPlayer.java
+cd ../snake
+echo "compiling snake"; javac *.java
 
-cd ..
+cd ../element-finder
+echo "compiling element-finder"; javac *.java
 
-cd Snake
-javac Main.java Snake.java Coordinate.java
-
-cd ..
-
-cd ElementFinder
-javac Background.java Character.java Element.java Leaderboard.java Level.java Main.java Modules.java MyClock.java MyPanel.java Object.java Obstacle.java SoundPlayer.java
+echo "finished compilation"

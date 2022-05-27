@@ -1,4 +1,4 @@
 #!/bin/sh
 
-cd Bounce
+cd bounce
 python3 Bounce.py

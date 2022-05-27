@@ -1,4 +1,4 @@
 #!/bin/sh
 
-cd ElementFinder
+cd element-finder
 java Main

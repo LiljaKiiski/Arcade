@@ -1,27 +1,19 @@
 #!/bin/sh
 
-mv *.class ~/temp
+mkdir temp
 
-cd Bounce
-mv __pycache__ ~/temp
-cd ..
+mv *.class temp
 
-cd SpaceGame
-mv __pychache__ ~/temp
-cd ..
+cd temp; rm -rf __pycache__;
+cd ../bounce; mv  __pycache__ ../temp
+cd ../temp; rm -rf __pycache__;
 
-cd ElementFinder
-mv *.class ~/temp
-cd ..
+cd ../space-game; mv __pycache__ ../temp
 
-cd Snake
-mv *.class ~/temp
-cd ..
+cd ../element-finder; mv *.class ../temp
 
-cd FingerDancer
-mv *.class ~/temp
-cd ..
+cd ../snake;  mv *.class ../temp
 
-cd Gomoku
-mv *.class ~/temp
-cd ..
+cd ../finger-dancer; mv *.class ../temp
+
+cd ../gomoku; mv *.class ../temp

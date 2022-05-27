@@ -1,4 +1,4 @@
 #!/bin/sh
 
-cd SpaceGame
+cd space-game
 python3 SpaceGame.py
