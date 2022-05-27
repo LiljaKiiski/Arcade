@@ -26,6 +26,7 @@ public class Main implements ActionListener{
 	public void createGame(){
 		games.add(new GameButton("./Bounce/bounce.sh", "images/bounce.png"));
 		games.add(new GameButton("./SpaceGame/space.sh", "images/space.png"));
+		games.add(new GameButton("./PogoFish/pogofish.sh", "images/pogofish.png"));
 		games.add(new GameButton("./Snake/snake.sh", "images/snake.png"));
 		games.add(new GameButton("./FingerDancer/dancer.sh", "images/dancer.png"));
 		games.add(new GameButton("./ElementFinder/finder.sh", "images/finder.png"));
