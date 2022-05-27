@@ -28,3 +28,9 @@ so this will not work with Windows (and maybe not with MacOS), I've only tested 
 3. Keep track of how many games you play with the "Games Played" label at the top
 
 ***For instructions on how to play certain games, refer to the README.md in the game's directory. Have fun!***
+
+TO-DO:
+- Add game icons in front game screen in order of creation
+- Make kivy-pong readme
+- Make pogofish readme
+- final touches
