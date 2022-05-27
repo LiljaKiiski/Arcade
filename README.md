@@ -9,7 +9,7 @@ so this will not work with Windows (and maybe not with MacOS), I've only tested 
 
 # Set Up
 1. To play all games... make sure you have installed:
-- Java 
+- Java (JDK + JRE)
 - Python3
 - Tkinter (for python3)
 2. Clone this repository or download the project files
