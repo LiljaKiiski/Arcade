@@ -1,3 +1,4 @@
+# [READMES UNDER CONSTRUCTION]
 # Lilja's Arcade
 Old games Lilja has made from December 2020 - November 2021
 
@@ -9,7 +10,7 @@ so this will not work with Windows (and maybe not with MacOS), I've only tested 
 
 # Set Up
 1. To play all games... make sure you have installed:
-- Java JDK + JRE)
+- Java JDK + JRE
 - Python3
 - Tkinter (for python3)
 - Pygame (for python3)
