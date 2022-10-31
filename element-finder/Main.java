@@ -1,6 +1,20 @@
-import java.awt.*;
-import java.awt.event.*;
-import javax.swing.*;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import java.awt.event.KeyListener;
+import java.awt.event.KeyEvent;
+import java.awt.CardLayout;
+import java.awt.BorderLayout;
+import java.awt.GridLayout;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Toolkit;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JLabel;
+import javax.swing.JButton;
+import javax.swing.JTextField;
+import javax.swing.ImageIcon;
+import javax.swing.Timer;
 import java.util.ArrayList;
 
 public class Main extends JPanel implements ActionListener,  KeyListener {
@@ -72,16 +86,16 @@ public class Main extends JPanel implements ActionListener,  KeyListener {
 			public void actionPerformed(ActionEvent arg0) {
 				if (gamePanel.isVisible()) {
 					//Checks if any keys are pressed
-					if (leftPressed) { //Moves all objects right
-						if (kid.posX > level.objects[0].posX + level.objects[0].width) {
+					if (leftPressed) { //Moves all items right
+						if (kid.posX > level.items[0].posX + level.items[0].width) {
 							kid.left = true;
 							kid.right = false;
 							level.moveAll(SPEED);
 						}
 					}
 
-					if (rightPressed) { //Moves all objects left
-						if (kid.posX + kid.width < level.objects[1].posX) {
+					if (rightPressed) { //Moves all items left
+						if (kid.posX + kid.width < level.items[1].posX) {
 							kid.right = true;
 							kid.left = false;
 							level.moveAll(-SPEED);
@@ -318,7 +332,7 @@ public class Main extends JPanel implements ActionListener,  KeyListener {
 			}	
 		}
 
-		//Moves Objects - specific for different levels
+		//Moves items - specific for different levels
 		if (gamePanel.isVisible()) {
 			for (int x = 0; x < level.obstacles.length; x++) {
 				switch (level.levelNum) {
@@ -408,9 +422,9 @@ public class Main extends JPanel implements ActionListener,  KeyListener {
 			g2d.drawImage(tempObstacle.image, tempObstacle.posX, tempObstacle.posY, null); 
 		}
 
-		//Objects
-		for (int x = 0; x < level.objects.length; x++) {
-			Object tempObject = level.objects[x];
+		//Items
+		for (int x = 0; x < level.items.length; x++) {
+			Item tempObject = level.items[x];
 			g2d.drawImage(tempObject.image, tempObject.posX, tempObject.posY, null); 
 		}
 

@@ -1,7 +1,11 @@
-import java.awt.event.*;
-import java.io.*;
-import java.util.*;
-import javax.swing.*;
+import java.awt.event.ActionListener;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+import java.util.ArrayList;
+import javax.swing.JButton;
 
 public class Modules {
 	//Set up  a button
@@ -70,7 +74,7 @@ public class Modules {
 		return false;		
 	}
 
-	//Checks if Kid has collided with an object
+	//Checks if Kid has collided with an Item
 	public boolean collided(Kid c, Obstacle o, Element e) {
 
 		int cLeft = c.posX;
@@ -87,19 +91,19 @@ public class Modules {
 			tBottom = e.posY + e.height;
 		}
 
-		else if (e.width == -1){ //checks collision with kid and object
+		else if (e.width == -1){ //checks collision with kid and item
 			tLeft = o.posX; 
 			tRight = o.posX + o.width;
 			tTop = o.posY;
 			tBottom = o.posY + o.height;
 		}
 
-		if(((cLeft >= tLeft && cLeft <= tRight) ||  //If objects have collided on x axis (left and right sides)
+		if(((cLeft >= tLeft && cLeft <= tRight) ||  //If items have collided on x axis (left and right sides)
 				(cRight >= tLeft && cRight <= tRight) ||
 				(cLeft >= tLeft && cRight <= tRight) || 
 				(cLeft <= tLeft && cRight >= tRight)) &&
 
-				((cTop >= tTop && cTop <= tBottom) ||  //If objects have collided on y axis (top and bottom sides)
+				((cTop >= tTop && cTop <= tBottom) ||  //If itemss have collided on y axis (top and bottom sides)
 						(cBottom <= tBottom && cBottom >= tTop) ||
 						(cTop >= tBottom && cBottom <= tBottom ) ||
 						(cTop <= tBottom && cBottom >= tBottom))) {

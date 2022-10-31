@@ -1,8 +1,12 @@
-import javax.swing.*;
-import javax.swing.border.*;
-import java.awt.event.*;
+import javax.swing.JButton;
+import javax.swing.JPanel;
+import javax.swing.JLabel;
+import javax.swing.ImageIcon;
+import javax.swing.BoxLayout;
+import java.awt.event.ActionListener;
+import javax.swing.border.EmptyBorder;
 
-public class Element extends Object{
+public class Element extends Item {
 	public String imageName, fact;
 	public double weight;
 	public JButton back;
