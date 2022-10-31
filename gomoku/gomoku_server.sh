@@ -1,4 +1,4 @@
 #!/bin/sh
 
-cd gomoku
+cd gomoku/bin
 java Server

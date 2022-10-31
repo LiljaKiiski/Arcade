@@ -1,4 +1,4 @@
 #!/bin/sh
 
-cd snake
+cd snake/bin
 java Main

@@ -1,4 +1,4 @@
 #!/bin/sh
 
-cd finger-dancer
+cd finger-dancer/bin
 java Main

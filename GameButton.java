@@ -12,10 +12,10 @@ public class GameButton extends JButton {
 
 	public void execute(){
 		try {
-                        Runtime runTime = Runtime.getRuntime();
-                        Process process = runTime.exec(command);
-                } catch (IOException e) {
-                        e.printStackTrace();
-                }
+            Runtime runTime = Runtime.getRuntime();
+            Process process = runTime.exec(command);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 	}
 }
