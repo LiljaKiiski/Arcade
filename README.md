@@ -1,5 +1,5 @@
 # arcade-games
-Old games Lmade from November 2020 - December 2021
+Old games made from November 2020 - December 2021
 
 ***NOTE!***
 The main program(shown below) that runs games with a button click works by running shell scripts, 
